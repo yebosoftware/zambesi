@@ -1,29 +1,3 @@
-# The below has been tested, and works well
-# terraform {
-#   required_providers {
-#     digitalocean = {
-#       source  = "digitalocean/digitalocean"
-#       version = "~> 2.0"
-#     }
-#     supabase = {
-#       source  = "supabase/supabase"
-#       version = "1.5.1"
-#     }
-#   }
-
-#   # backend "s3" {
-#   #   bucket = "your-space-name"     # DigitalOcean Space name
-#   #   region = "nyc3"                # Space region (e.g., nyc3, sfo2)
-#   #   key    = "path/to/statefile.tfstate"  # Path within the Space (e.g., `myproject/terraform.tfstate`)
-#   #   access_key = "your-access-key"  # DigitalOcean access key
-#   #   secret_key = "your-secret-key"  # DigitalOcean secret key
-#   #   endpoint = "nyc3.digitaloceanspaces.com"  # Endpoint for DigitalOcean Spaces (nyc3, sfo2, etc.)
-#   #   acl = "private"               # Make the state file private
-#   # }
-# }
-
-# Variables
-
 # Supabase
 variable "supabase_access_token" {
   description = "Supabase API key"
@@ -91,17 +65,6 @@ variable "frontend_build_dir" {
   type        = string
   default     = ""
 }
-
-# Providers
-# provider "digitalocean" {
-#   token = var.digital_ocean_access_token
-# }
-
-# provider "supabase" {
-#   access_token = var.supabase_access_token
-# }
-
-# Modules
 
 # Backend module
 module "kunene" {
