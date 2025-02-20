@@ -6,13 +6,19 @@ variable "supabase_access_token" {
 }
 
 variable "supabase_organization_id" {
-  description = "Supabase organization id"
+  description = "Supabase organization id - e.g. 'yaqgmkuovhyxtvmdgdxo'"
   type        = string
   default     = ""
 }
 
 variable "supabase_project_region" {
   description = "Supabase project region"
+  type        = string
+  default     = ""
+}
+
+variable "example_var" {
+  description = "Supabase project name"
   type        = string
   default     = ""
 }
