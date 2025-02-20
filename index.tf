@@ -17,12 +17,6 @@ variable "supabase_project_region" {
   default     = ""
 }
 
-variable "example_var" {
-  description = "Supabase project name"
-  type        = string
-  default     = ""
-}
-
 variable "supabase_project_name" {
   description = "Supabase project name"
   type        = string
